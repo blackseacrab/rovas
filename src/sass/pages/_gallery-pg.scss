@@ -1,0 +1,42 @@
+.gallery-pg {
+  margin-bottom: 8rem;
+  &__hero {
+    height: calc(100vh - 10rem);
+    background-image: linear-gradient(
+        to left,
+        rgba($color-primary-10, 0.6),
+        rgba($color-primary-1, 0.5)
+      ),
+      url('/src/img/gallery-pg/hero/hero-1-3x.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 6rem;
+
+    &__text-box {
+      width: 80%;
+
+      @include absCenter;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    &__heading {
+      color: $color-white;
+      text-transform: uppercase;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  &__header {
+    display: inline-block;
+    background-image: linear-gradient(
+      to left,
+      $color-primary-8,
+      $color-primary-12
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    backface-visibility: hidden;
+  }
+}

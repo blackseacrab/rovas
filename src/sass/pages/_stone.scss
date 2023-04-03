@@ -1,0 +1,36 @@
+.stone {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: calc(100vh - 10rem);
+  grid-row-gap: 10rem;
+
+  &__hero {
+    background-image: linear-gradient(
+        to left,
+        rgba($color-primary-10, 0.6),
+        rgba($color-primary-1, 0.5)
+      ),
+      url('/src/img/stone/hero/hero-1-3x.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &__text-box {
+      width: 80%;
+
+      @include absCenter;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+  &__gallery {
+    a,
+    a:link,
+    a:visited {
+      margin: 2rem auto;
+      display: block;
+      width: max-content;
+    }
+  }
+}

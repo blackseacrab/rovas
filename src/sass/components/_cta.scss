@@ -1,0 +1,124 @@
+.cta {
+  padding: 15rem 10rem;
+  background-image: linear-gradient(
+    to bottom,
+    $color-white,
+    $color-primary-5,
+    $color-primary-1
+  );
+
+  @include respond(phone-big) {
+    padding: 15rem 4rem;
+  }
+  @include respond(phone) {
+    padding: 15rem 2rem;
+  }
+}
+
+.book {
+  border: 4px solid $color-primary-6;
+  border-radius: $default-border-radius;
+  padding: 2rem;
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-primary-1, 0.8) 0%,
+      rgba($color-primary-1, 0.8) 50%,
+      transparent 80%
+    ),
+    url(../img/cta/cta-3x.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 1.5rem 4rem rgba($color-primary-16, 0.4);
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-primary-1, 0.8) 0%,
+        rgba($color-primary-1, 0.8) 65%,
+        transparent 90%
+      ),
+      url(../img/cta/cta-3x.jpg);
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary-1, 0.8) 0%,
+        rgba($color-primary-1, 0.8) 100%
+      ),
+      url(../img/cta/cta-3x.jpg);
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+      padding: 5rem;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      padding: 4rem;
+    }
+    @include respond(phone) {
+      padding: 2rem;
+    }
+  }
+}
+
+.form {
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: $default-border-radius;
+    background-color: rgba($color-white, 0.9);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all 0.3s;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-primary-10, 0.1);
+      border-bottom: 3px solid $color-primary-4;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-primary-11;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-primary-5;
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    color: $color-primary-19;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Your Trusted Partner for Siding and Stone Installation"
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TZ7XZ27');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+    <script src="https://unpkg.com/swipe-event-listener@1.2.1/dist/swipe-event-listener.js"></script>
+
+    <script type="module" src="/src/js/controller.js"></script>
+
+    <title>Rovas Construction | Your Partner in Construction</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TZ7XZ27"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Mobile navigation -->
+    <nav class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="/index.html" class="navigation__link"
+              ><span>01</span>Home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="/about-us.html" class="navigation__link"
+              ><span>02</span>About us</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="/siding.html" class="navigation__link"
+              ><span>03</span>Siding</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="/stone-cladding.html" class="navigation__link"
+              ><span>04</span>Stone cladding</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="/gallery.html" class="navigation__link"
+              ><span>05</span>Gallery</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="/contact-us.html" class="navigation__link"
+              ><span>06</span>Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <!-- BTN top -->
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header__logo-box">
+        <img
+          src="/src/img/logo-company-small.png"
+          alt="Company logo"
+          class="header__logo__img"
+        />
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__item">
+            <a href="/index.html" class="header__nav__item__link">Home</a>
+          </li>
+          <li class="header__nav__item header__nav__item--active">
+            <a href="/about-us.html" class="header__nav__item__link"
+              >About us</a
+            >
+          </li>
+          <li class="header__nav__item">
+            <a href="/siding.html" class="header__nav__item__link">Siding</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="/stone-cladding.html" class="header__nav__item__link"
+              >Stone cladding</a
+            >
+          </li>
+          <li class="header__nav__item">
+            <a href="/gallery.html" class="header__nav__item__link">Gallery</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="/contact-us.html" class="header__nav__item__link"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="about-us">
+      <!-- Hero section -->
+      <section class="about-us__hero" id="about-us">
+        <div class="about-us__hero__img-box" id="img-box">
+          <img
+            src="/src/img/about-us/about-us-1-3x.jpg"
+            alt="Gallery image-1"
+            class="about-us__hero__img about-us__hero__img--1"
+            id="about-us__hero__img--1"
+          /><img
+            src="/src/img/about-us/about-us-2-3x.jpg"
+            alt="Gallery image-2"
+            class="about-us__hero__img about-us__hero__img--2"
+          /><img
+            src="/src/img/about-us/about-us-3-3x.jpg"
+            alt="Gallery image-3"
+            class="about-us__hero__img about-us__hero__img--3"
+          /><img
+            src="/src/img/about-us/about-us-4-3x.jpg"
+            alt="Gallery image-4"
+            class="about-us__hero__img about-us__hero__img--4"
+          /><img
+            src="/src/img/about-us/about-us-5-3x.jpg"
+            alt="Gallery image-5"
+            class="about-us__hero__img about-us__hero__img--5"
+          /><img
+            src="/src/img/about-us/about-us-6-3x.jpg"
+            alt="Gallery image-6"
+            class="about-us__hero__img about-us__hero__img--6"
+          />
+        </div>
+
+        <div class="about-us__hero__text-box">
+          <h1 class="heading-2 about-us__hero__heading">
+            Calgary's trusted exterior project partner for Residential and
+            Commercial Properties
+          </h1>
+          <p class="about-us__hero__text paragraph">
+            We are a family-owned exterior project business located in Calgary,
+            specializing in both commercial and residential projects. Our goal
+            is to provide high-quality workmanship, modern installation
+            techniques, eco-friendly materials, and a unique approach tailored
+            to your specific needs. Our experienced team of professionals is
+            dedicated to delivering top-notch services that exceed your
+            expectations. Contact us today to schedule a consultation and
+            experience the difference our high-quality work and unique approach
+            can make for you.
+          </p>
+          <a href="" class="btn about-us__hero__btn btn--popup btn--animated"
+            >Get a free estimate</a
+          >
+        </div>
+      </section>
+
+      <a href="#" class="hidden btn--top--link">
+        <svg class="btn--top">
+          <use xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"></use>
+        </svg>
+      </a>
+
+      <section class="how section btn--top-anc">
+        <hgroup class="heading__group-2">
+          <h3 class="subheading">How it works?</h3>
+          <h4 class="heading-2">
+            Our Process for Delivering High-Quality Exterior Solutions
+          </h4>
+        </hgroup>
+        <div class="how-box">
+          <div class="how__item how__item--1">
+            <div
+              class="how__item__img"
+              role="img"
+              aria-label="Schedule a meating"
+            ></div>
+            <div class="how__item__text-box">
+              <p class="how__item__text-box__number">01</p>
+              <h5 class="how__item__text-box__heading heading-3">
+                Contact Rovas Construction
+              </h5>
+              <p class="how__item__text-box__text paragraph">
+                We make it easy! Simply fill out our
+                <a href="" class="btn--popup">online form</a> or call
+                <a class="" href="tel:+1 587-357-4446"> (+1) 587-357-44-46</a>.
+                Take the first step toward a better home.
+              </p>
+            </div>
+          </div>
+          <div class="how__item how__item--2">
+            <div
+              class="how__item__img"
+              role="img"
+              aria-label="Get Detailed
+            Estimates"
+            ></div>
+            <div class="how__item__text-box">
+              <p class="how__item__text-box__number">02</p>
+              <h5 class="how__item__text-box__heading heading-3">
+                Get Detailed Estimates
+              </h5>
+              <p class="how__item__text-box__text paragraph">
+                Accurate and precise measurements with a thorough inspection
+                provides you with a quick detailed estimate.
+              </p>
+            </div>
+          </div>
+          <div class="how__item how__item--3">
+            <div
+              class="how__item__img"
+              role="img"
+              aria-label="Experience Professional
+            Installation"
+            ></div>
+            <div class="how__item__text-box">
+              <p class="how__item__text-box__number">03</p>
+              <h5 class="how__item__text-box__heading heading-3">
+                Professional Installation
+              </h5>
+              <p class="how__item__text-box__text paragraph">
+                Home exterior remodeling projects do not have to be stressful.
+                Our team keeps you up-to-date on the process and takes time to
+                listen and answer your questions.
+              </p>
+            </div>
+          </div>
+          <div class="how__item how__item--4">
+            <div
+              class="how__item__img"
+              role="img"
+              aria-label="Schedule a meating"
+            ></div>
+            <div class="how__item__text-box">
+              <p class="how__item__text-box__number">04</p>
+              <h5 class="how__item__text-box__heading heading-3">
+                Amazing Results, Happy Customers
+              </h5>
+              <p class="how__item__text-box__text paragraph">
+                Breathe a sigh of relief as you come home to a beautiful,
+                long-lasting, and low-maintenance home exterior.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features">
+        <hgroup class="heading__group-2">
+          <h2 class="subheading">Features</h2>
+          <h3 class="heading-2">
+            We are taking pride in providing exceptional services to all our
+            clients!
+          </h3>
+        </hgroup>
+        <div class="features--box">
+          <div class="features__item">
+            <svg class="features__item__icon">
+              <use xlink:href="/src/img/icons/sptite.svg#icon-gauge"></use>
+            </svg>
+            <h3 class="heading-3">High-Quality Workmanship</h3>
+            <p class="features__item__text">
+              Our team of professionals has years of experience in the exterior
+              project field, delivering high-quality workmanship that meets your
+              expectations.
+            </p>
+          </div>
+          <div class="features__item">
+            <svg class="features__item__icon">
+              <use xlink:href="/src/img/icons/sptite.svg#icon-tools"></use>
+            </svg>
+            <h3 class="heading-3">Modern Installation Techniques</h3>
+            <p class="features__item__text">
+              We use the latest techniques and tools to ensure that your project
+              is completed to the highest standards and in a timely manner.
+            </p>
+          </div>
+          <div class="features__item">
+            <svg class="features__item__icon">
+              <use xlink:href="/src/img/icons/sptite.svg#icon-leaf"></use>
+            </svg>
+            <h3 class="heading-3">Eco-Friendly Materials</h3>
+            <p class="features__item__text">
+              We understand the importance of using environmentally friendly
+              materials that minimize the impact on the environment while still
+              delivering quality results.
+            </p>
+          </div>
+          <div class="features__item">
+            <svg class="features__item__icon">
+              <use xlink:href="/src/img/icons/sptite.svg#icon-users"></use>
+            </svg>
+            <h3 class="heading-3">Customized Approach</h3>
+            <p class="features__item__text">
+              We take the time to listen to your specific needs and preferences
+              to create a customized plan that suits your unique requirements.
+            </p>
+          </div>
+          <div class="features__item">
+            <svg class="features__item__icon">
+              <use xlink:href="/src/img/icons/sptite.svg#icon-infinity"></use>
+            </svg>
+            <h3 class="heading-3">Comprehensive Services</h3>
+            <p class="features__item__text">
+              Our services cover all aspects of exterior projects, from stone
+              cladding and siding to gutter systems, ensuring that your project
+              is completed to your satisfaction.
+            </p>
+          </div>
+          <div class="features__item">
+            <svg class="features__item__icon">
+              <use
+                xlink:href="/src/img/icons/sptite.svg#icon-emoji-happy"
+              ></use>
+            </svg>
+            <h3 class="heading-3">Exceptional Customer Service</h3>
+            <p class="features__item__text">
+              Our team is committed to providing exceptional customer service,
+              ensuring that your experience with us is stress-free and pleasant.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about-us__faq accordion section">
+        <hgroup class="heading__group-2">
+          <h3 class="subheading">FAQ</h3>
+          <h4 class="heading-2">Commonly Asked Questions</h4>
+        </hgroup>
+        <div class="accordion-box">
+          <div class="accordion__item">
+            <p class="accordion__item__number">01</p>
+            <p class="accordion__item__text">What services do you offer?</p>
+
+            <svg class="accordion__item__icon accordion__item__icon--closed">
+              <use
+                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+              ></use>
+            </svg>
+
+            <div class="accordion__item__hidden-box">
+              <p>
+                We offer a wide range of exterior project services, including
+                stone cladding, siding, gutter systems, and more. Please visit
+                our siding and stone cladding sections on the page for more
+                information.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <p class="accordion__item__number">02</p>
+            <p class="accordion__item__text">Are your materials eco-friendly</p>
+
+            <svg class="accordion__item__icon accordion__item__icon--closed">
+              <use
+                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+              ></use>
+            </svg>
+
+            <div class="accordion__item__hidden-box">
+              <p>
+                Yes, we prioritize the use of eco-friendly and sustainable
+                materials whenever possible, minimizing our impact on the
+                environment while still delivering quality results.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <p class="accordion__item__number">03</p>
+            <p class="accordion__item__text">
+              How long does a typical project take?
+            </p>
+
+            <svg class="accordion__item__icon accordion__item__icon--closed">
+              <use
+                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+              ></use>
+            </svg>
+
+            <div class="accordion__item__hidden-box">
+              <p>
+                The duration of a project depends on the size and complexity of
+                the project. We provide an estimated timeline during the
+                consultation phase, and we work diligently to ensure that the
+                project is completed on time.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <p class="accordion__item__number">04</p>
+            <p class="accordion__item__text">
+              Do you offer free consultations?
+            </p>
+
+            <svg class="accordion__item__icon accordion__item__icon--closed">
+              <use
+                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+              ></use>
+            </svg>
+
+            <div class="accordion__item__hidden-box">
+              <p>
+                Yes, we offer free consultations to all potential clients.
+                During the consultation, we will discuss your project needs and
+                provide you with a customized plan and a quote.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <p class="accordion__item__number">05</p>
+            <p class="accordion__item__text">Are you licensed and insured?</p>
+
+            <svg class="accordion__item__icon accordion__item__icon--closed">
+              <use
+                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+              ></use>
+            </svg>
+
+            <div class="accordion__item__hidden-box">
+              <p>
+                Yes, we are licensed and insured, providing our clients with the
+                peace of mind that their project is being handled by
+                professionals who adhere to industry standards and regulations.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <p class="accordion__item__number">06</p>
+            <p class="accordion__item__text">
+              What sets you apart from other exterior project companies?
+            </p>
+
+            <svg class="accordion__item__icon accordion__item__icon--closed">
+              <use
+                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+              ></use>
+            </svg>
+
+            <div class="accordion__item__hidden-box">
+              <p>
+                We take pride in delivering high-quality workmanship, using
+                modern installation techniques, eco-friendly materials, and a
+                unique approach tailored to your specific needs. Our team is
+                dedicated to providing exceptional customer service and ensuring
+                that you are completely satisfied with the final results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured-in" id="featured-in">
+        <div class="featured-in__box">
+          <h5 class="heading-4">As featured in</h5>
+          <div class="featured-in__logos">
+            <img
+              class="featured-in__logo featured-in__logo-1"
+              src="/src/img/featured-in/featured-in-1-3x.png"
+              alt="logo"
+              loading="lazy"
+            />
+            <img
+              class="featured-in__logo featured-in__logo-2"
+              src="/src/img/featured-in/featured-in-2-3x.png"
+              alt="logo"
+              loading="lazy"
+            />
+            <img
+              class="featured-in__logo featured-in__logo-3"
+              src="/src/img/featured-in/featured-in-3-3x.png"
+              alt="logo"
+              loading="lazy"
+            />
+            <img
+              class="featured-in__logo featured-in__logo-4"
+              src="/src/img/featured-in/featured-in-4-3x.png"
+              alt="logo"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="cta section" id="cta">
+        <div class="book">
+          <div class="book__form">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="1afd6f8c-560c-4417-a7f5-565b3738a14e"
+              />
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-2">
+                  Ready to transform your home? Contact us today!
+                </h2>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="text"
+                  name="Ім'я"
+                  class="form__input"
+                  placeholder="Full name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Full name</label>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form__input"
+                  placeholder="Email address"
+                  id="email"
+                  required
+                />
+                <label for="email" class="form__label">Email address</label>
+              </div>
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://rovas-construction.netlify.app/success"
+              />
+
+              <div class="form__group">
+                <button type="submit" class="btn btn--green">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="#" class="social__logo">
+          <img
+            class="social__logo__img"
+            alt="Rovas Construstion company logo"
+            src="/src/img/logo-company-big.png"
+            loading="lazy"
+          />
+        </a>
+
+        <ul class="social__links">
+          <li>
+            <a class="social__links__link" href="" target="_blank">
+              <svg class="social__links__icon">
+                <use
+                  xlink:href="/src/img/icons/sptite.svg#icon-instagram-with-circle"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__links__link" href="" target="_blank">
+              <svg class="social__links__icon">
+                <use
+                  xlink:href="/src/img/icons/sptite.svg#icon-facebook-with-circle"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__links__link" href="" target="_blank">
+              <svg class="social__links__icon">
+                <use
+                  xlink:href="/src/img/icons/sptite.svg#icon-twitter-with-circle"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="social__copyright">
+          &copy; <span class="year">2027</span> Rovas Construction. All rights
+          reserved.
+        </p>
+      </div>
+      <div class="contacts">
+        <p class="contacts__heading">Contact us</p>
+        <address class="contacts__contact">
+          <p class="contacts__contact__address">Calgary, AB, Canada</p>
+          <div class="contacts__contact__link-box">
+            <a class="contacts__contact__link" href="tel:+1 587-357-4446"
+              ><svg class="contacts__contact__link__icon">
+                <use xlink:href="/src/img/icons/sptite.svg#icon-phone"></use>
+              </svg>
+              (+1) 587-357-44-46</a
+            >
+          </div>
+          <div class="contacts__contact__link-box">
+            <a
+              class="contacts__contact__link"
+              href="mailto:rovas.construction@gmail.com "
+            >
+              <svg class="contacts__contact__link__icon">
+                <use
+                  xlink:href="/src/img/icons/sptite.svg#icon-mail"
+                ></use></svg
+              >rovas.construction@gmail.com
+            </a>
+          </div>
+        </address>
+      </div>
+
+      <nav class="nav">
+        <p class="nav__heading contacts__heading">Information</p>
+        <ul class="nav__nav">
+          <li class="nav__nav__item">
+            <a href="#" class="nav__nav__link">Home</a>
+          </li>
+          <li class="nav__nav__item">
+            <a href="/about-us.html" class="nav__nav__link">About us</a>
+          </li>
+          <li class="nav__nav__item">
+            <a href="/siding.html" class="nav__nav__link">Siding</a>
+          </li>
+          <li class="nav__nav__item">
+            <a href="/stone-cladding.html" class="nav__nav__link"
+              >Stone cladding</a
+            >
+          </li>
+          <li class="nav__nav__item">
+            <a href="/gallery.html" class="nav__nav__link">Gallery</a>
+          </li>
+          <li class="nav__nav__item">
+            <a href="/contact-us.html" class="nav__nav__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <div class="popup hidden" id="popup">
+      <div class="popup__content">
+        <div class="book">
+          <button class="popup__close">&times;</button>
+          <div class="book__form">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="1afd6f8c-560c-4417-a7f5-565b3738a14e"
+              />
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-2">
+                  Ready to transform your home? Contact us today!
+                </h2>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="text"
+                  name="Full name"
+                  class="form__input"
+                  placeholder="Full name"
+                  id="namePopup"
+                  required
+                />
+                <label for="namePopup" class="form__label">Full name</label>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form__input"
+                  placeholder="Email address"
+                  id="emailPopup"
+                  required
+                />
+                <label for="emailPopup" class="form__label"
+                  >Email address</label
+                >
+              </div>
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://rovas-construction.netlify.app/success"
+              />
+
+              <div class="form__group">
+                <button type="submit" class="btn btn--green">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

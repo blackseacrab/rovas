@@ -1,0 +1,137 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-size: $default-font-size;
+    background-color: $color-primary-10;
+    color: $color-primary-19;
+    font-weight: 600;
+    font-family: inherit;
+    border: 2px solid transparent;
+    border-radius: $default-border-radius;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    position: relative;
+  }
+
+  &:hover {
+    background-color: $color-primary-2;
+    color: $color-primary-17;
+    transform: scale(1.05);
+    border: 2px solid $color-primary-10;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(2);
+      opacity: 0;
+      background-color: $color-white;
+    }
+  }
+
+  &:active {
+    transform: scale(1.02);
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &--hero:link,
+  &--hero:visited {
+    background-color: $color-primary-9;
+    color: $color-primary-2;
+  }
+  &--hero:hover {
+    color: $color-primary-10;
+    background-color: $color-primary-2;
+    // animation: pulse 1s infinite;
+  }
+  &--popup:link,
+  &--popup:visited {
+    text-decoration: none;
+    align-self: center;
+    width: max-content;
+    background-color: $color-primary-2;
+    color: $color-primary-12;
+  }
+  &--popup:hover {
+    // animation: none;
+    transform: scale(1);
+  }
+  &--popup:active {
+    transform: scale(1);
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+  &--top {
+    background-color: $color-primary-2;
+    height: 5rem;
+    width: 5rem;
+    fill: $color-primary-10;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    z-index: 999999999;
+    cursor: pointer;
+
+    &:hover {
+      transform: rotate(180deg);
+      animation: pulseTopBtn 1s infinite;
+    }
+    &--link:link,
+    &--link:visited {
+      position: fixed;
+      bottom: 4rem;
+      left: 2rem;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &--tab {
+    // font-size: 2rem;
+    display: inline-block;
+    background-color: $color-primary-1;
+    box-shadow: 0 0.5rem 1rem rgba($color: $color-primary-10, $alpha: 0.3);
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 500;
+    border: none;
+    padding: 1rem 1.6rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
+
+    &:hover {
+      color: $color-primary-1;
+      background-color: $color-primary-10;
+    }
+
+    &--stone {
+      width: max-content;
+      // padding: 1rem 8rem;
+    }
+  }
+}

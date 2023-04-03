@@ -1,0 +1,35 @@
+.siding {
+  &__hero {
+    height: calc(100vh - 10rem);
+    background-image: linear-gradient(
+        to left,
+        rgba($color-primary-12, 0.4),
+        rgba($color-primary-1, 0.5)
+      ),
+      url('/src/img/siding/hero/hero-1-3x.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &__text-box {
+      @include absCenter;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    &__heading {
+      color: $color-white;
+      text-transform: uppercase;
+
+      display: inline-block;
+      background-image: linear-gradient(
+        to right,
+        $color-primary-9,
+        $color-primary-14
+      );
+      -webkit-background-clip: text;
+      color: transparent;
+      backface-visibility: hidden;
+      text-align: center;
+    }
+  }
+}

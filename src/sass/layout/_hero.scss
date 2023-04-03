@@ -1,0 +1,109 @@
+#hero-home {
+  height: calc(100vh - 10rem);
+  transition: 0.5s;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}
+.home__hero {
+  &__left__heading,
+  &__right__heading {
+    transition: all 0.3s;
+    text-align: center;
+    display: inline-block;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &__right__heading {
+    color: $color-primary-1;
+    animation: moveInRight 1s ease-out;
+  }
+  &__left__heading {
+    animation: moveInLeft 1s ease-out;
+  }
+  &__left {
+    position: relative;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-6, 0.3),
+        rgba($color-primary-9, 0.3)
+      ),
+      url('/src/img/hero/hero-1-3x.jpg');
+    background-size: auto 90rem;
+    background-position: left;
+  }
+
+  &__right {
+    position: relative;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-9, 0.3),
+        rgba($color-primary-12, 0.3)
+      ),
+      url('/src/img/hero/hero-2-3x.jpg');
+    background-size: auto 90rem;
+    background-position: left;
+  }
+  &__left-box,
+  &__right-box {
+    @include absCenter;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+}
+
+#hero:has(.hero__left:hover) {
+  grid-template-columns: 2fr 0.5fr;
+  .hero__right__heading {
+    font-size: 4rem;
+  }
+  .hero__left__heading {
+    font-size: 8rem;
+  }
+}
+
+#hero:has(.hero__right:hover) {
+  grid-template-columns: 0.5fr 2fr;
+  .hero__left__heading {
+    font-size: 4rem;
+  }
+  .hero__right__heading {
+    font-size: 8rem;
+  }
+}
+
+:where(.hero__left, .hero__right) {
+  transition: 0.3s;
+}
+
+// hover animation for header
+.hero__right__heading__text,
+.hero__left__heading__text {
+  display: block;
+  width: max-content;
+  text-align: center;
+}
+.hero__right__heading__text::after,
+.hero__left__heading__text::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: $color-primary-10;
+  transition: width 0.5s;
+}
+.hero__right__heading__text:hover:after,
+.hero__left__heading__text:hover:after {
+  width: 100%;
+}

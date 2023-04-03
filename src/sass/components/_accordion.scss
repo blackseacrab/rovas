@@ -1,0 +1,105 @@
+.accordion-box {
+  width: 60vw;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  transition: all 0.4s ease;
+
+  @include respond(phone-big) {
+    width: 80vw;
+  }
+  @include respond(phone-small) {
+    width: 95vw;
+  }
+}
+.accordion {
+  transition: all 0.4s ease;
+
+  &__heading {
+    color: $color-primary-19;
+    text-align: center;
+    width: 80%;
+    margin: 4rem auto 8rem;
+    transition: all 0.4s ease;
+  }
+
+  &__item {
+    box-shadow: 0 0 3.2rem rgba($color-primary-15, 0.1);
+    padding: 2.4rem;
+    border-radius: $default-border-radius;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 2.4rem;
+    row-gap: 3.2rem;
+    align-items: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    &__number,
+    &__text {
+      font-size: 2.4rem;
+      font-weight: 500;
+      transition: all 0.4s ease;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+      @include respond(phone-smallest) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__number {
+      color: rgba($color-primary-15, 0.5);
+      transition: all 0.4s ease;
+    }
+    &__icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      fill: $color-primary-8;
+      opacity: 0.5s ease-in-out;
+      cursor: pointer;
+      transition: all 0.4s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &__hidden-box {
+      grid-column: 2;
+      display: none;
+      font-size: $default-font-size;
+      transition: all 0.4s ease;
+    }
+    &__hidden-box p {
+      font-size: $default-font-size;
+      line-height: 1.6;
+      margin-bottom: 2.4rem;
+      transition: all 0.5s;
+      transition: all 0.4s ease;
+    }
+    &__hidden-box ul {
+      color: $color-primary-6;
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      transition: all 0.4s ease;
+    }
+  }
+}
+.open {
+  border-top: 4px solid $color-primary-8;
+}
+.open .accordion__item__hidden-box {
+  display: block;
+}
+.open .accordion__item__number,
+.open .accordion__item__text {
+  color: $color-primary-8;
+  opacity: 1;
+}
+.open .accordion__item__icon--closed {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,30 @@
+.gallery-popup {
+  background-color: rgba($color-black, 0.5);
+  max-width: 80vw;
+  height: min-content;
+  max-height: 40rem;
+  margin: 2rem;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 111111;
+
+  &__close {
+    z-index: 999;
+    color: $color-primary-17;
+    font-family: inherit;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+
+    &:hover {
+      color: $color-primary-8;
+    }
+  }
+}

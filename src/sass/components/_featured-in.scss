@@ -1,0 +1,81 @@
+.featured-in {
+  padding: 8rem 4rem;
+  border-top: 2px solid $color-primary-1;
+  border-bottom: 2px solid $color-primary-1;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h5 {
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      align-self: center;
+      margin-bottom: 4rem;
+      color: $color-primary-6;
+      text-align: center;
+
+      @include respond(phone) {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(tab-port) {
+      justify-content: space-between;
+    }
+
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      grid-gap: 2rem;
+    }
+
+    img {
+      height: 7rem;
+      filter: brightness(70%);
+      opacity: 70%;
+      transition: all 0.3s;
+
+      @include respond(tab-med) {
+        height: 6rem;
+      }
+
+      @include respond(phone-big) {
+        filter: brightness(70%);
+        height: 4rem;
+      }
+      @include respond(phone) {
+        height: 3rem;
+      }
+
+      &:hover {
+        filter: brightness(40%);
+        opacity: 100%;
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__logo {
+    @include respond(phone) {
+      justify-self: center;
+    }
+    &-1 {
+    }
+    &-2 {
+    }
+    &-3 {
+    }
+    &-4 {
+    }
+    &-5 {
+    }
+  }
+}

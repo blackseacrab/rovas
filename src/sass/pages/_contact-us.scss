@@ -1,0 +1,136 @@
+.contact-us {
+  padding: 8rem 12rem 8rem;
+  display: flex;
+  gap: 8rem;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    0deg,
+    rgba($color-primary-1, 0.1) 85%,
+    rgba($color-primary-4, 0.8) 100%,
+    transparent 80%
+  );
+
+  @include respond(phone) {
+    padding: 6rem 8rem 0;
+
+    flex-direction: column;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+
+    &__heading {
+      color: $color-primary-17;
+
+      @include respond(phone-med) {
+        font-size: 4rem;
+      }
+    }
+
+    &__links {
+      align-self: flex-start;
+      list-style: none;
+      display: flex;
+      gap: 4rem;
+      align-items: center;
+
+      @include respond(phone) {
+        align-self: center;
+      }
+
+      li {
+        z-index: 99;
+        fill: $color-primary-10;
+      }
+
+      &__link:link,
+      &__link:visited {
+        fill: inherit;
+        display: inline-block;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+      &__link:hover {
+        transform: scale(1.2);
+        fill: $color-primary-12;
+      }
+      &__link:active {
+        transform: scale(1.05);
+      }
+
+      &__icon {
+        height: 6rem;
+        width: 6rem;
+        fill: inherit;
+      }
+    }
+  }
+
+  &__contacts {
+    color: $color-primary-15;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    &__heading {
+      color: $color-primary-17;
+      @include respond(phone-med) {
+        font-size: 4rem;
+      }
+    }
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+
+      font-style: normal;
+      font-size: 1.8rem;
+      line-height: 1.6;
+
+      @include respond(phone) {
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__link-box {
+        display: inline-block;
+        width: max-content;
+      }
+
+      &__link:link,
+      &__link:visited {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.5s;
+      }
+
+      &__link-box::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $color-primary-10;
+        transition: width 0.3s;
+      }
+
+      &__link-box:hover::after {
+        width: 100%;
+      }
+
+      &__link__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: $color-primary-10;
+      }
+    }
+  }
+}
