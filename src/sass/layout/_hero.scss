@@ -1,4 +1,4 @@
-#hero-home {
+#hero {
   height: calc(100vh - 10rem);
   transition: 0.5s;
   display: grid;
@@ -35,7 +35,7 @@
         rgba($color-primary-6, 0.3),
         rgba($color-primary-9, 0.3)
       ),
-      url('/src/img/hero/hero-1-3x.jpg');
+      url('/src/img/hero/hero-1-3x.webp');
     background-size: auto 90rem;
     background-position: left;
   }
@@ -47,7 +47,7 @@
         rgba($color-primary-9, 0.3),
         rgba($color-primary-12, 0.3)
       ),
-      url('/src/img/hero/hero-2-3x.jpg');
+      url('/src/img/hero/hero-2-3x.webp');
     background-size: auto 90rem;
     background-position: left;
   }
@@ -63,39 +63,39 @@
   }
 }
 
-#hero:has(.hero__left:hover) {
+#hero:has(.home__hero__left:hover) {
   grid-template-columns: 2fr 0.5fr;
-  .hero__right__heading {
+  .home__hero__right__heading {
     font-size: 4rem;
   }
-  .hero__left__heading {
+  .home__hero__left__heading {
     font-size: 8rem;
   }
 }
 
-#hero:has(.hero__right:hover) {
+#hero:has(.home__hero__right:hover) {
   grid-template-columns: 0.5fr 2fr;
-  .hero__left__heading {
+  .home__hero__left__heading {
     font-size: 4rem;
   }
-  .hero__right__heading {
+  .home__hero__right__heading {
     font-size: 8rem;
   }
 }
 
-:where(.hero__left, .hero__right) {
+:where(.home__hero__left, .home__hero__right) {
   transition: 0.3s;
 }
 
 // hover animation for header
-.hero__right__heading__text,
-.hero__left__heading__text {
+.home__hero__right__heading__text,
+.home__hero__left__heading__text {
   display: block;
   width: max-content;
   text-align: center;
 }
-.hero__right__heading__text::after,
-.hero__left__heading__text::after {
+.home__hero__right__heading__text::after,
+.home__hero__left__heading__text::after {
   content: '';
   display: block;
   width: 0;
@@ -103,7 +103,7 @@
   background: $color-primary-10;
   transition: width 0.5s;
 }
-.hero__right__heading__text:hover:after,
-.hero__left__heading__text:hover:after {
+.home__hero__right__heading__text:hover:after,
+.home__hero__left__heading__text:hover:after {
   width: 100%;
 }

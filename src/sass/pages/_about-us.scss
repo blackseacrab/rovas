@@ -8,6 +8,9 @@
     grid-template-rows: max-content;
     grid-row-gap: 8rem;
   }
+  @include respond(phone) {
+    grid-row-gap: 0rem;
+  }
 
   &__hero {
     padding: 2rem;
@@ -58,7 +61,9 @@
         grid-template-rows: repeat(6, 1fr);
       }
       @include respond(phone) {
-        display: none;
+        height: min-content;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 10vw);
       }
     }
     &__img {

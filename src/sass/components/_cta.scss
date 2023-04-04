@@ -25,7 +25,7 @@
       rgba($color-primary-1, 0.8) 50%,
       transparent 80%
     ),
-    url(../img/cta/cta-3x.jpg);
+    url(../img/cta/cta-3x.webp);
   background-size: cover;
   background-position: center;
   box-shadow: 0 1.5rem 4rem rgba($color-primary-16, 0.4);
@@ -37,7 +37,7 @@
         rgba($color-primary-1, 0.8) 65%,
         transparent 90%
       ),
-      url(../img/cta/cta-3x.jpg);
+      url(../img/cta/cta-3x.webp);
     background-size: cover;
   }
 
@@ -47,7 +47,7 @@
         rgba($color-primary-1, 0.8) 0%,
         rgba($color-primary-1, 0.8) 100%
       ),
-      url(../img/cta/cta-3x.jpg);
+      url(../img/cta/cta-3x.webp);
   }
 
   &__form {
