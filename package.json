@@ -4,7 +4,7 @@
   "description": "Businees website",
   "scripts": {
     "start": "parcel index.html  about-us.html siding.html stone-cladding.html gallery.html contact-us.html success.html",
-    "build": "parcel index.html  about-us.html siding.html stone-cladding.html gallery.html contact-us.html success.html --dist-dir ./dist"
+    "build": "parcel build  index.html  about-us.html siding.html stone-cladding.html gallery.html contact-us.html success.html --dist-dir ./dist"
   },
   "author": "Andrii Svystunov",
   "license": "ISC",
