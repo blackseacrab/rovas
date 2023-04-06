@@ -1,5 +1,5 @@
 #hero {
-  height: calc(100vh - 10rem);
+  height: 100vh;
   transition: 0.5s;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -23,10 +23,22 @@
   }
   &__right__heading {
     color: $color-primary-1;
-    animation: moveInRight 1s ease-out;
+    animation: moveInRight 0.75s ease-out 0.5s;
+    animation-fill-mode: backwards;
+
+    @include respond(phone) {
+      animation: moveInRight 0.75s ease-out 1s;
+      animation-fill-mode: backwards;
+    }
   }
   &__left__heading {
-    animation: moveInLeft 1s ease-out;
+    animation: moveInLeft 0.75s ease-out 1s;
+    animation-fill-mode: backwards;
+
+    @include respond(phone) {
+      animation: moveInLeft 0.75s ease-out 0.5s;
+      animation-fill-mode: backwards;
+    }
   }
   &__left {
     position: relative;
@@ -106,4 +118,110 @@
 .home__hero__right__heading__text:hover:after,
 .home__hero__left__heading__text:hover:after {
   width: 100%;
+}
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  #hero:has(.home__hero__left:hover) {
+    grid-template-columns: 1fr 1fr;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+    .home__hero__right__heading {
+      font-size: 6rem;
+
+      @include respond(phone-med) {
+        font-size: 5.5rem;
+      }
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+      @include respond(phone-small) {
+        font-size: 4.5rem;
+      }
+      @include respond(phone-smallest) {
+        font-size: 4rem;
+      }
+    }
+    .home__hero__left__heading {
+      font-size: 6rem;
+
+      @include respond(phone-med) {
+        font-size: 5.5rem;
+      }
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+      @include respond(phone-small) {
+        font-size: 4.5rem;
+      }
+      @include respond(phone-smallest) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  #hero:has(.home__hero__right:hover) {
+    grid-template-columns: 1fr 1fr;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+    .home__hero__left__heading {
+      font-size: 6rem;
+
+      @include respond(phone-med) {
+        font-size: 5.5rem;
+      }
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+      @include respond(phone-small) {
+        font-size: 4.5rem;
+      }
+      @include respond(phone-smallest) {
+        font-size: 4rem;
+      }
+    }
+    .home__hero__right__heading {
+      font-size: 6rem;
+
+      @include respond(phone-med) {
+        font-size: 5.5rem;
+      }
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+      @include respond(phone-small) {
+        font-size: 4.5rem;
+      }
+      @include respond(phone-smallest) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  :where(.home__hero__left, .home__hero__right) {
+    transition: 0.3s;
+  }
+
+  // hover animation for header
+  .home__hero__right__heading__text,
+  .home__hero__left__heading__text {
+    display: block;
+    width: auto;
+    text-align: center;
+  }
+  .home__hero__right__heading__text::after,
+  .home__hero__left__heading__text::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: $color-primary-10;
+    transition: width 0.5s;
+  }
+  .home__hero__right__heading__text:hover:after,
+  .home__hero__left__heading__text:hover:after {
+    width: 100%;
+  }
 }

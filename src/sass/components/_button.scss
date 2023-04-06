@@ -39,6 +39,8 @@
   &:focus {
     outline: none;
   }
+
+  //HERO
   &--hero:link,
   &--hero:visited {
     background-color: $color-primary-9;
@@ -49,6 +51,20 @@
     background-color: $color-primary-2;
     // animation: pulse 1s infinite;
   }
+  &--hero {
+    &--left:link,
+    &--left:active {
+      animation: moveInBottom 0.5s ease-out 2s;
+      animation-fill-mode: backwards;
+    }
+    &--right:link,
+    &--right:active {
+      animation: moveInBottom 0.5s ease-out 1.5s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  // POPUP
   &--popup:link,
   &--popup:visited {
     text-decoration: none;
@@ -77,11 +93,13 @@
     z-index: -1;
     transition: all 0.4s;
   }
-
+  // ANIMATED
   &--animated {
-    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation: moveInBottom 1s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
+
+  // TOP
   &--top {
     background-color: $color-primary-2;
     height: 5rem;
@@ -106,6 +124,7 @@
     }
   }
 
+  // TAB
   &--tab {
     // font-size: 2rem;
     display: inline-block;
@@ -132,6 +151,20 @@
     &--stone {
       width: max-content;
       // padding: 1rem 8rem;
+    }
+  }
+}
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .btn--hero {
+    &--left:link,
+    &--left:active {
+      animation: moveInBottom 0.5s ease-out 0.5s;
+      animation-fill-mode: backwards;
+    }
+    &--right:link,
+    &--right:active {
+      animation: moveInBottom 0.5s ease-out 1s;
+      animation-fill-mode: backwards;
     }
   }
 }

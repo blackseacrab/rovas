@@ -12,7 +12,7 @@ body {
   display: inline-block;
   text-align: center;
 
-  @include respond(phone-small) {
+  @include respond(phone-med) {
     font-size: 5.5rem;
   }
   @include respond(phone) {

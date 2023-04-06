@@ -16,6 +16,7 @@ const init = function () {
   model.revealSections();
   model.topBtn();
   footer.autoChangeYear();
+  footer.footerAnimationsLoader();
   tab.tabSelections();
   swiper.swiperCaller();
   swiper2.swiperCaller2();

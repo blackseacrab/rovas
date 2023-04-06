@@ -69,14 +69,14 @@
     }
   }
   &__links {
-    align-self: flex-start;
+    align-self: center;
     list-style: none;
     display: flex;
     gap: 2rem;
     align-items: center;
 
     @include respond(phone-med) {
-      align-self: center;
+      // align-self: center;
       justify-self: center;
     }
 
