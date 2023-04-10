@@ -51,7 +51,7 @@
       grid-gap: 1rem;
       padding: 1rem;
       grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(6, 13%);
+      grid-template-rows: repeat(6, 10vh);
 
       @include respond(phone-big) {
         grid-row: 2/3;
