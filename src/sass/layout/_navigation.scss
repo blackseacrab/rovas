@@ -102,7 +102,7 @@
 
   //FUNCTIONALITY
   &__checkbox:checked ~ &__background {
-    transform: translateY(0);
+    transform: scale(80);
   }
 
   &__checkbox:checked ~ &__nav {

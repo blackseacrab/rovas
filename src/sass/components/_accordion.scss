@@ -13,28 +13,41 @@
     width: 95vw;
   }
 }
+
 .accordion {
   transition: all 0.4s ease;
 
-  &__heading {
-    color: $color-primary-19;
-    text-align: center;
-    width: 80%;
-    margin: 4rem auto 8rem;
-    transition: all 0.4s ease;
-  }
-
   &__item {
     box-shadow: 0 0 3.2rem rgba($color-primary-15, 0.1);
-    padding: 2.4rem;
     border-radius: $default-border-radius;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    column-gap: 2.4rem;
-    row-gap: 3.2rem;
-    align-items: center;
+    overflow: hidden;
+
     transition: all 0.4s ease;
-    cursor: pointer;
+
+    &__btn {
+      background-color: $color-white;
+
+      font-family: inherit;
+      cursor: pointer;
+      padding: 2rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      color: $color-primary-19;
+
+      transition: all 0.4s ease;
+
+      &:hover {
+        background-color: rgba($color-primary-8, 0.1);
+      }
+    }
+
+    &__visible {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-column-gap: 2.4rem;
+    }
 
     &__number,
     &__text {
@@ -66,34 +79,29 @@
         transform: scale(1.1);
       }
     }
-    &__hidden-box {
-      grid-column: 2;
-      display: none;
-      font-size: $default-font-size;
-      transition: all 0.4s ease;
-    }
-    &__hidden-box p {
-      font-size: $default-font-size;
-      line-height: 1.6;
-      margin-bottom: 2.4rem;
-      transition: all 0.5s;
-      transition: all 0.4s ease;
-    }
-    &__hidden-box ul {
-      color: $color-primary-6;
-      margin-left: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-      transition: all 0.4s ease;
+
+    &__hidden {
+      padding: 0 2rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      p {
+        opacity: 0;
+        font-size: $default-font-size;
+        line-height: 1.6;
+        margin-bottom: 2.4rem;
+        padding: 1.2rem 1.6rem;
+        font-family: inherit;
+        transition: all 0.3s;
+      }
     }
   }
 }
 .open {
   border-top: 4px solid $color-primary-8;
 }
-.open .accordion__item__hidden-box {
-  display: block;
+.open .accordion__item__hidden p {
+  opacity: 1;
 }
 .open .accordion__item__number,
 .open .accordion__item__text {

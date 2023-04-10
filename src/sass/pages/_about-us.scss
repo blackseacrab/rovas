@@ -115,12 +115,14 @@
     }
     &__heading {
       color: $color-primary-17;
-      animation: moveInRight 1s ease-out;
     }
     &__text {
       color: $color-primary-14;
-
-      animation: moveInRight 1s ease-out;
+    }
+  }
+  &__faq {
+    @include respond(phone) {
+      margin-top: 4rem;
     }
   }
 }

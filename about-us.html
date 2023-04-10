@@ -145,7 +145,7 @@
     <main class="about-us">
       <!-- Hero section -->
       <section class="about-us__hero" id="about-us">
-        <div class="about-us__hero__img-box" id="img-box">
+        <div class="about-us__hero__img-box slide-in-left" id="img-box">
           <img
             srcset="
               src/img/about-us/about-us-1-1x.webp 250w,
@@ -216,11 +216,11 @@
         </div>
 
         <div class="about-us__hero__text-box">
-          <h1 class="heading-2 about-us__hero__heading">
+          <h1 class="heading-2 about-us__hero__heading slide-in-right">
             Calgary's trusted exterior project partner for Residential and
             Commercial Properties
           </h1>
-          <p class="about-us__hero__text paragraph">
+          <p class="about-us__hero__text paragraph slide-in-right">
             We are a family-owned exterior project business located in Calgary,
             specializing in both commercial and residential projects. Our goal
             is to provide high-quality workmanship, modern installation
@@ -231,7 +231,7 @@
             experience the difference our high-quality work and unique approach
             can make for you.
           </p>
-          <a href="" class="btn about-us__hero__btn btn--popup btn--animated"
+          <a href="" class="btn about-us__hero__btn btn--popup slide-in-bottom"
             >Get a free estimate</a
           >
         </div>
@@ -327,7 +327,7 @@
         </div>
       </section>
 
-      <section class="section features">
+      <section class="features section">
         <hgroup class="heading__group-2">
           <h2 class="subheading">Features</h2>
           <h3 class="heading-2">
@@ -403,23 +403,28 @@
           </div>
         </div>
       </section>
-      <section class="about-us__faq accordion section">
+      <section class="about-us__faq accordion">
         <hgroup class="heading__group-2">
           <h3 class="subheading">FAQ</h3>
           <h4 class="heading-2">Commonly Asked Questions</h4>
         </hgroup>
         <div class="accordion-box">
           <div class="accordion__item">
-            <p class="accordion__item__number">01</p>
-            <p class="accordion__item__text">What services do you offer?</p>
+            <button class="accordion__item__btn">
+              <div class="accordion__item__visible">
+                <p class="accordion__item__number">01</p>
+                <p class="accordion__item__text">What services do you offer?</p>
 
-            <svg class="accordion__item__icon accordion__item__icon--closed">
-              <use
-                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
-              ></use>
-            </svg>
-
-            <div class="accordion__item__hidden-box">
+                <svg
+                  class="accordion__item__icon accordion__item__icon--closed"
+                >
+                  <use
+                    xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </div>
+            </button>
+            <div class="accordion__item__hidden">
               <p>
                 We offer a wide range of exterior project services, including
                 stone cladding, siding, gutter systems, and more. Please visit
@@ -428,18 +433,24 @@
               </p>
             </div>
           </div>
-
           <div class="accordion__item">
-            <p class="accordion__item__number">02</p>
-            <p class="accordion__item__text">Are your materials eco-friendly</p>
+            <button class="accordion__item__btn">
+              <div class="accordion__item__visible">
+                <p class="accordion__item__number">02</p>
+                <p class="accordion__item__text">
+                  Are your materials eco-friendly
+                </p>
 
-            <svg class="accordion__item__icon accordion__item__icon--closed">
-              <use
-                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
-              ></use>
-            </svg>
-
-            <div class="accordion__item__hidden-box">
+                <svg
+                  class="accordion__item__icon accordion__item__icon--closed"
+                >
+                  <use
+                    xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </div>
+            </button>
+            <div class="accordion__item__hidden">
               <p>
                 Yes, we prioritize the use of eco-friendly and sustainable
                 materials whenever possible, minimizing our impact on the
@@ -448,18 +459,23 @@
             </div>
           </div>
           <div class="accordion__item">
-            <p class="accordion__item__number">03</p>
-            <p class="accordion__item__text">
-              How long does a typical project take?
-            </p>
+            <button class="accordion__item__btn">
+              <div class="accordion__item__visible">
+                <p class="accordion__item__number">03</p>
+                <p class="accordion__item__text">
+                  How long does a typical project take?
+                </p>
 
-            <svg class="accordion__item__icon accordion__item__icon--closed">
-              <use
-                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
-              ></use>
-            </svg>
-
-            <div class="accordion__item__hidden-box">
+                <svg
+                  class="accordion__item__icon accordion__item__icon--closed"
+                >
+                  <use
+                    xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </div>
+            </button>
+            <div class="accordion__item__hidden">
               <p>
                 The duration of a project depends on the size and complexity of
                 the project. We provide an estimated timeline during the
@@ -469,18 +485,23 @@
             </div>
           </div>
           <div class="accordion__item">
-            <p class="accordion__item__number">04</p>
-            <p class="accordion__item__text">
-              Do you offer free consultations?
-            </p>
+            <button class="accordion__item__btn">
+              <div class="accordion__item__visible">
+                <p class="accordion__item__number">04</p>
+                <p class="accordion__item__text">
+                  Do you offer free consultations?
+                </p>
 
-            <svg class="accordion__item__icon accordion__item__icon--closed">
-              <use
-                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
-              ></use>
-            </svg>
-
-            <div class="accordion__item__hidden-box">
+                <svg
+                  class="accordion__item__icon accordion__item__icon--closed"
+                >
+                  <use
+                    xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </div>
+            </button>
+            <div class="accordion__item__hidden">
               <p>
                 Yes, we offer free consultations to all potential clients.
                 During the consultation, we will discuss your project needs and
@@ -489,16 +510,23 @@
             </div>
           </div>
           <div class="accordion__item">
-            <p class="accordion__item__number">05</p>
-            <p class="accordion__item__text">Are you licensed and insured?</p>
+            <button class="accordion__item__btn">
+              <div class="accordion__item__visible">
+                <p class="accordion__item__number">05</p>
+                <p class="accordion__item__text">
+                  Are you licensed and insured?
+                </p>
 
-            <svg class="accordion__item__icon accordion__item__icon--closed">
-              <use
-                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
-              ></use>
-            </svg>
-
-            <div class="accordion__item__hidden-box">
+                <svg
+                  class="accordion__item__icon accordion__item__icon--closed"
+                >
+                  <use
+                    xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </div>
+            </button>
+            <div class="accordion__item__hidden">
               <p>
                 Yes, we are licensed and insured, providing our clients with the
                 peace of mind that their project is being handled by
@@ -507,18 +535,23 @@
             </div>
           </div>
           <div class="accordion__item">
-            <p class="accordion__item__number">06</p>
-            <p class="accordion__item__text">
-              What sets you apart from other exterior project companies?
-            </p>
+            <button class="accordion__item__btn">
+              <div class="accordion__item__visible">
+                <p class="accordion__item__number">06</p>
+                <p class="accordion__item__text">
+                  What sets you apart from other exterior project companies?
+                </p>
 
-            <svg class="accordion__item__icon accordion__item__icon--closed">
-              <use
-                xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
-              ></use>
-            </svg>
-
-            <div class="accordion__item__hidden-box">
+                <svg
+                  class="accordion__item__icon accordion__item__icon--closed"
+                >
+                  <use
+                    xlink:href="/src/img/icons/sptite.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </div>
+            </button>
+            <div class="accordion__item__hidden">
               <p>
                 We take pride in delivering high-quality workmanship, using
                 modern installation techniques, eco-friendly materials, and a
