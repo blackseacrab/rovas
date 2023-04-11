@@ -79,6 +79,7 @@
     color: $color-primary-1;
     font-weight: 500;
     transform: translateY(50%);
+    transition: all 0.3s;
   }
   &__text-box {
     grid-row: 2 / 3;
@@ -102,4 +103,8 @@
       margin-right: 1rem;
     }
   }
+}
+.card:hover .card__link__icon {
+  animation: jello-vertical 0.9s both;
+  animation-delay: 0.3s;
 }

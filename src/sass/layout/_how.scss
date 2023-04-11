@@ -34,7 +34,18 @@
           rgba($color-primary-1, 0.05),
           rgba($color-primary-12, 0.8)
         ),
-        url('/src/img/how/how-1-3x.webp');
+        url('/src/img/how/how-1-2x.webp');
+
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-1, 0.05),
+            rgba($color-primary-12, 0.8)
+          ),
+          url('/src/img/how/how-1-3x.webp');
+      }
     }
     &--2 {
       background-image: linear-gradient(
@@ -42,7 +53,18 @@
           rgba($color-primary-1, 0.05),
           rgba($color-primary-12, 0.8)
         ),
-        url('/src/img/how/how-2-3x.webp');
+        url('/src/img/how/how-2-2x.webp');
+
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-1, 0.05),
+            rgba($color-primary-12, 0.8)
+          ),
+          url('/src/img/how/how-2-3x.webp');
+      }
     }
     &--3 {
       background-image: linear-gradient(
@@ -50,7 +72,18 @@
           rgba($color-primary-1, 0.05),
           rgba($color-primary-12, 0.8)
         ),
-        url('/src/img/how/how-3-3x.webp');
+        url('/src/img/how/how-3-2x.webp');
+
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-1, 0.05),
+            rgba($color-primary-12, 0.8)
+          ),
+          url('/src/img/how/how-3-3x.webp');
+      }
     }
     &--4 {
       background-image: linear-gradient(
@@ -58,7 +91,18 @@
           rgba($color-primary-1, 0.05),
           rgba($color-primary-12, 0.8)
         ),
-        url('/src/img/how/how-4-3x.webp');
+        url('/src/img/how/how-4-2x.webp');
+
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-1, 0.05),
+            rgba($color-primary-12, 0.8)
+          ),
+          url('/src/img/how/how-4-3x.webp');
+      }
     }
 
     &__text-box {

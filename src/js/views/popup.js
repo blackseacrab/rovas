@@ -4,7 +4,7 @@ export const popupWindowOpenClose = function () {
   if (
     document.querySelector('.popup') !== null &&
     document.querySelector('.overlay') !== null &&
-    document.querySelectorAll('.btn--popup') !== null &&
+    document.querySelectorAll('.btn--popup').length !== 0 &&
     document.querySelector('.popup__close') !== null
   ) {
     const popup = document.querySelector('.popup');

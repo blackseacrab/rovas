@@ -1,5 +1,7 @@
 'use strict';
 
+import { MEDIA_QUERY_600_PX } from '../config';
+
 // Set current year
 export const autoChangeYear = function () {
   const yearEl = document.querySelectorAll('.year');
@@ -29,7 +31,6 @@ export const footerAnimationsLoader = function () {
   );
   const navNavItem = document.querySelectorAll('.nav__nav__item');
   const nav = document.querySelector('.nav');
-  const mediaQuery = window.matchMedia('(min-width: 600px)');
 
   const socialClassManipulator = function (
     socialLogo,
@@ -43,6 +44,7 @@ export const footerAnimationsLoader = function () {
     sociaCopyright.classList.add('slide-in-left');
     sociaCopyright.style.animationDelay = '.25s';
   };
+
   const contactsClassManipulator = function (
     contactsHeadings,
     contactsContactAddress,
@@ -63,6 +65,7 @@ export const footerAnimationsLoader = function () {
       el.style.animationDelay = `${250}ms`;
     });
   };
+
   const navClassManipulator = function (navNavItem) {
     //NAV
     navNavItem.forEach((el, i) => {
@@ -172,8 +175,8 @@ export const footerAnimationsLoader = function () {
   };
 
   // Register event listener
-  mediaQuery.addListener(handleMobileChange);
+  MEDIA_QUERY_600_PX.addListener(handleMobileChange);
 
   // Initial check
-  handleMobileChange(mediaQuery);
+  handleMobileChange(MEDIA_QUERY_600_PX);
 };

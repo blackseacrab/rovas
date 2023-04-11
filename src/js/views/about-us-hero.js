@@ -1,67 +1,78 @@
 'use strict';
 
-const aboutUsHeroImgBox = document.querySelector('.about-us__hero__img-box');
-const aboutUsHeroHeading = document.querySelector('.about-us__hero__heading');
-const aboutUsHeroText = document.querySelector('.about-us__hero__text');
-const aboutUsHeroBtn = document.querySelector('.about-us__hero__btn');
-const mediaQuery900px = window.matchMedia('(max-width: 900px)');
+import { MEDIA_QUERY_900_PX } from '../config';
+import { fadeAnimation, mediaQuery } from '../helpers';
 
-// gallery fade animation
-const fadeAnimation = function () {
-  const handleHover = function (e) {
-    if (e.target.classList.contains('about-us__hero__img')) {
-      const img = e.target;
-      const siblings = img
-        .closest('.about-us__hero__img-box')
-        .querySelectorAll('.about-us__hero__img');
+export const aboutUsHeroCaller = function () {
+  if (
+    document.querySelector('.about-us__hero__img-box') == null &&
+    document.querySelector('.about-us__hero__heading') == null &&
+    document.querySelector('.about-us__hero__text') == null &&
+    document.getElementsByClassName('about-us__hero__img').length === 0 &&
+    document.querySelector('.about-us__hero__btn') == null
+  ) {
+    return;
+  } else {
+    const aboutUsHeroImgBox = document.querySelector(
+      '.about-us__hero__img-box'
+    );
+    const aboutUsHeroHeading = document.querySelector(
+      '.about-us__hero__heading'
+    );
+    const aboutUsHeroText = document.querySelector('.about-us__hero__text');
+    const aboutUsHeroBtn = document.querySelector('.about-us__hero__btn');
+    const aboutUsHeroImg = document.getElementsByClassName(
+      'about-us__hero__img'
+    );
+    const imageClassName = aboutUsHeroImg[0].className.split(' ')[0];
+    const boxClassName = aboutUsHeroImgBox.className.split(' ')[0];
 
-      siblings.forEach(el => {
-        if (el !== img) el.style.opacity = this;
-      });
-    }
-  };
+    const heroAnimationsDelays = function () {
+      aboutUsHeroHeading.style.animationDelay = '.25s';
+      aboutUsHeroText.style.animationDelay = '.3s';
+      aboutUsHeroImgBox.style.animationDelay = '.25s';
+      aboutUsHeroBtn.style.animationDelay = '1s';
+    };
 
-  // Passing "argument" into handler
-  aboutUsHeroImgBox.addEventListener('mouseover', handleHover.bind(0.5));
-  aboutUsHeroImgBox.addEventListener('mouseout', handleHover.bind(1));
-};
-
-const aboutUsHeroAnimation = function () {
-  aboutUsHeroHeading.style.animationDelay = '.25s';
-  aboutUsHeroText.style.animationDelay = '.3s';
-  aboutUsHeroImgBox.style.animationDelay = '.25s';
-  aboutUsHeroBtn.style.animationDelay = '1s';
-
-  const handleMobileChange = function (e) {
-    // Check if the media query is true
-
-    if (e.matches) {
-      // Then log the following message to the console
+    const heroAnimationsMobileDelays = function () {
       aboutUsHeroHeading.classList.remove('slide-in-right');
       aboutUsHeroHeading.classList.add('slide-in-left');
-
+      console.log(`test`);
       aboutUsHeroHeading.style.animationDelay = '.25s';
       aboutUsHeroText.style.animationDelay = '.25s';
       aboutUsHeroBtn.style.animationDelay = '.75s';
       aboutUsHeroImgBox.style.animationDelay = '0s';
-    }
-  }; // Register event listener
-  mediaQuery900px.addListener(handleMobileChange);
+    };
 
-  // Initial check
-  handleMobileChange(mediaQuery900px);
-};
+    //Animations
+    const aboutUsHeroAnimation = function () {
+      heroAnimationsDelays();
 
-export const aboutUsHeroCaller = function () {
-  if (
-    document.querySelector('.about-us__hero__img-box') !== null &&
-    document.querySelector('.about-us__hero__heading') !== null &&
-    document.querySelector('.about-us__hero__text') !== null &&
-    document.querySelector('.about-us__hero__btn') !== null
-  ) {
-    fadeAnimation();
+      mediaQuery(heroAnimationsMobileDelays, MEDIA_QUERY_900_PX);
+
+      //   const handleMobileChange = function (e) {
+      //     // Check if the media query is true
+
+      //     if (e.matches) {
+      //       // Then log the following message to the console
+      //       heroAnimationsMobileDelays();
+      //     }
+      //   }; // Register event listener
+      //   MEDIA_QUERY_900_PX.addListener(handleMobileChange);
+
+      //   // Initial check
+      //   handleMobileChange(MEDIA_QUERY_900_PX);
+    };
+    /////////////////////////////////////////////////////////////
+    //CALL Functions
     aboutUsHeroAnimation();
-  } else {
-    return;
+
+    //Fade Animation
+    fadeAnimation(
+      imageClassName,
+      boxClassName,
+      aboutUsHeroImgBox,
+      imageClassName
+    );
   }
 };

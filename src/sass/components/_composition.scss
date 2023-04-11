@@ -16,6 +16,12 @@
   }
 
   &__item {
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
     &--1 {
       grid-row: 1 / span 2;
       grid-column: 1 / span 2;
@@ -164,6 +170,5 @@
     display: block;
     border-radius: 4px;
     box-shadow: 0 1rem 1rem rgba($color-primary-19, 0.3);
-    transition: all 0.3s;
   }
 }

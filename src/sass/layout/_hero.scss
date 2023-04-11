@@ -47,9 +47,20 @@
         rgba($color-primary-6, 0.3),
         rgba($color-primary-9, 0.3)
       ),
-      url('/src/img/hero/hero-1-3x.webp');
+      url('/src/img/hero/hero-1-2x.webp');
     background-size: auto 90rem;
     background-position: left;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-6, 0.3),
+          rgba($color-primary-9, 0.3)
+        ),
+        url('/src/img/hero/hero-1-3x.webp');
+    }
   }
 
   &__right {
@@ -59,9 +70,20 @@
         rgba($color-primary-9, 0.3),
         rgba($color-primary-12, 0.3)
       ),
-      url('/src/img/hero/hero-2-3x.webp');
+      url('/src/img/hero/hero-2-2x.webp');
     background-size: auto 90rem;
     background-position: left;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-9, 0.3),
+          rgba($color-primary-12, 0.3)
+        ),
+        url('/src/img/hero/hero-2-3x.webp');
+    }
   }
   &__left-box,
   &__right-box {
