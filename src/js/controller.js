@@ -21,7 +21,7 @@ const init = function () {
   featuredIn.featuredInCaller();
   features.featuresCaller();
   footer.autoChangeYear();
-  footer.footerAnimationsLoader();
+  // footer.footerAnimationsLoader();
   gallery.galleryPgHeroCaller();
   how.howCaller();
   popup.popupWindowOpenClose();
