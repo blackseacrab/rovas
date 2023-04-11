@@ -3,6 +3,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: calc(100vh - 10rem);
   grid-row-gap: 10rem;
+  overflow: hidden;
 
   @include respond(phone-big) {
     grid-template-rows: max-content;

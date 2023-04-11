@@ -3,6 +3,7 @@
   transition: 0.5s;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 
   @include respond(phone) {
     grid-template-columns: 1fr;
