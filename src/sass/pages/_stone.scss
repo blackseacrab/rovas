@@ -1,7 +1,7 @@
 .stone {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: calc(100vh - 10rem);
+  grid-template-rows: 100vh;
   grid-row-gap: 10rem;
 
   &__hero {
@@ -21,6 +21,16 @@
       display: flex;
       flex-direction: column;
       gap: 3rem;
+
+      h1 {
+        animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          backwards;
+      }
+    }
+    &__btn {
+      animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        backwards;
+      animation-delay: 0.7s;
     }
   }
 

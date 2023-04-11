@@ -88,7 +88,6 @@
     fill: $color-primary-10;
     border-radius: 50%;
     transform: rotate(180deg);
-    z-index: 999999999;
     cursor: pointer;
 
     &:hover {
@@ -97,6 +96,7 @@
     }
     &--link:link,
     &--link:visited {
+      z-index: 999999999;
       position: fixed;
       bottom: 4rem;
       left: 2rem;
@@ -107,6 +107,7 @@
 
   // TAB
   &--tab {
+    text-decoration: none;
     // font-size: 2rem;
     display: inline-block;
     background-color: $color-primary-1;

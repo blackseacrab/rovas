@@ -7,11 +7,13 @@
 .services {
   max-width: 90vw;
   margin: 6rem auto 0 auto;
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary-3,
-    $color-primary-8
-  );
+  box-shadow: 0 0.5rem 4rem 3rem rgba($color: $color-primary-10, $alpha: 0.1);
+
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   $color-primary-1,
+  //   $color-primary-2
+  // );
   border-radius: $default-border-radius;
 
   @include respond(phone) {

@@ -1,28 +1,23 @@
 'use strict';
 
-const box = document.querySelector('.accordion-box');
-export const reveal = function () {
-  if (document.querySelector('.accordion-box') !== null) {
-    box.addEventListener('click', function (e) {
-      e.target.closest('.accordion__item').classList.toggle('open');
-      const content = e.target.closest('.accordion__item').children[1];
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + 'px';
-      }
-    });
-  } else {
-    return;
-  }
-};
-export const accordionAnimation = function () {
-  const accordionItems = document.querySelectorAll('.accordion__item');
-  console.log(accordionItems);
+const accordionBox = document.querySelector('.accordion-box');
+const accordionItems = document.querySelectorAll('.accordion__item');
 
+const revealAccordionItems = function () {
+  accordionBox.addEventListener('click', function (e) {
+    e.target.closest('.accordion__item').classList.toggle('open');
+    const content = e.target.closest('.accordion__item').children[1];
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    }
+  });
+};
+
+const accordionAnimation = function () {
   const accordionAnimationItems = function (entries, observer) {
     const [entry] = entries;
-    // console.log(entry);
     if (!entry.isIntersecting) return;
 
     accordionItems.forEach((el, i) => {
@@ -42,5 +37,16 @@ export const accordionAnimation = function () {
     }
   );
 
-  accordionBoxObserver.observe(box);
+  accordionBoxObserver.observe(accordionBox);
+};
+export const accordionCaller = function () {
+  if (
+    document.querySelector('.accordion-box') !== null &&
+    document.querySelectorAll('.accordion__item') !== null
+  ) {
+    revealAccordionItems();
+    accordionAnimation();
+  } else {
+    return;
+  }
 };

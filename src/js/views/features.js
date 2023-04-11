@@ -1,13 +1,13 @@
-const featuresBoxEl = document.querySelector('.features--box');
+'use strict';
+
 const featuresItems = document.querySelectorAll('.features__item');
 const mediaQuery350px = window.matchMedia('(max-width: 350px)');
 
-export const featuresAnimations = function () {
+const featuresAnimations = function () {
   const handleMobileChange = function (e) {
     // Check if the media query is true
 
     if (e.matches) {
-      console.log(`test`);
       // Then log the following message to the console
       featuresItems.forEach((item, i) => {
         const featuresCardsAnimations = function (entries, observer) {
@@ -33,7 +33,6 @@ export const featuresAnimations = function () {
         );
 
         featuresBoxObserver.observe(item);
-        console.log(item, i);
       });
     } else {
       return;
@@ -44,4 +43,12 @@ export const featuresAnimations = function () {
 
   // Initial check
   handleMobileChange(mediaQuery350px);
+};
+
+export const featuresCaller = function () {
+  if (document.querySelectorAll('.features__item') !== null) {
+    featuresAnimations();
+  } else {
+    return;
+  }
 };

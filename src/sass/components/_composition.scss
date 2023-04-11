@@ -8,6 +8,7 @@
 
   grid-gap: 1.5rem;
   padding: 1.5rem;
+  position: relative;
 
   @include respond(phone-med) {
     grid-template: repeat(14, 8vw) / repeat(8, 1fr);
@@ -163,5 +164,6 @@
     display: block;
     border-radius: 4px;
     box-shadow: 0 1rem 1rem rgba($color-primary-19, 0.3);
+    transition: all 0.3s;
   }
 }

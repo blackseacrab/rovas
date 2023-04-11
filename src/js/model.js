@@ -38,7 +38,6 @@ export const revealSections = function () {
     const [entry] = entries;
 
     if (!entry.isIntersecting) return;
-
     entry.target.classList.remove('section--hidden');
     observer.unobserve(entry.target);
   };
@@ -61,11 +60,12 @@ export const topBtn = function () {
     document.querySelector('.btn--top--link') !== null
   ) {
     const btnTopAnc = document.querySelector('.btn--top-anc');
+    const btnToplink = document.querySelector('.btn--top--link');
 
     const revealBtnTop = function (entries, observer) {
       const [entry] = entries;
       if (!entry.isIntersecting) return;
-      entry.target.previousElementSibling.classList.toggle('hidden');
+      btnToplink.classList.toggle('hidden');
     };
 
     const sectionObserver = new IntersectionObserver(revealBtnTop, {

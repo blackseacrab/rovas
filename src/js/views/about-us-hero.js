@@ -1,11 +1,13 @@
-// gallery fade animation
+'use strict';
+
 const aboutUsHeroImgBox = document.querySelector('.about-us__hero__img-box');
 const aboutUsHeroHeading = document.querySelector('.about-us__hero__heading');
 const aboutUsHeroText = document.querySelector('.about-us__hero__text');
 const aboutUsHeroBtn = document.querySelector('.about-us__hero__btn');
 const mediaQuery900px = window.matchMedia('(max-width: 900px)');
 
-export const fadeAnimation = function () {
+// gallery fade animation
+const fadeAnimation = function () {
   const handleHover = function (e) {
     if (e.target.classList.contains('about-us__hero__img')) {
       const img = e.target;
@@ -24,7 +26,7 @@ export const fadeAnimation = function () {
   aboutUsHeroImgBox.addEventListener('mouseout', handleHover.bind(1));
 };
 
-export const aboutUsHeroAnimation = function () {
+const aboutUsHeroAnimation = function () {
   aboutUsHeroHeading.style.animationDelay = '.25s';
   aboutUsHeroText.style.animationDelay = '.3s';
   aboutUsHeroImgBox.style.animationDelay = '.25s';
@@ -49,6 +51,17 @@ export const aboutUsHeroAnimation = function () {
   // Initial check
   handleMobileChange(mediaQuery900px);
 };
-if (window.location.pathname.includes('about')) {
-  // console.log('This is the about page');
-}
+
+export const aboutUsHeroCaller = function () {
+  if (
+    document.querySelector('.about-us__hero__img-box') !== null &&
+    document.querySelector('.about-us__hero__heading') !== null &&
+    document.querySelector('.about-us__hero__text') !== null &&
+    document.querySelector('.about-us__hero__btn') !== null
+  ) {
+    fadeAnimation();
+    aboutUsHeroAnimation();
+  } else {
+    return;
+  }
+};

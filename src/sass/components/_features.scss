@@ -68,8 +68,8 @@
     }
 
     &:hover {
-      animation: wobble-hor-bottom 0.8s both;
-      // transform: translateY(-1.5rem) scale(1.03);
+      // animation: wobble-hor-bottom 0.8s both;
+      transform: translateY(-1.5rem) scale(1.03);
     }
   }
 }

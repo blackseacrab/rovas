@@ -169,12 +169,18 @@
         &__heading {
           color: $color-primary-17;
           transition: all 0.3s;
+          @include respond(phone-small) {
+            font-size: 3rem;
+          }
         }
 
         &__text {
           color: $color-primary-15;
           font-weight: 400;
           transform: translateY(0rem);
+          @include respond(phone-small) {
+            font-size: 2rem;
+          }
 
           a,
           a:link,
