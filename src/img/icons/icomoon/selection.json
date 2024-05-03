@@ -17,11 +17,11 @@
       "attrs": [],
       "properties": {
         "id": 18,
-        "order": 50,
+        "order": 76,
         "prevSize": 20,
         "name": "tools"
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 13
     },
@@ -41,11 +41,11 @@
       "attrs": [],
       "properties": {
         "id": 34,
-        "order": 54,
+        "order": 78,
         "prevSize": 20,
         "name": "chevron-down"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 33
     },
@@ -65,11 +65,11 @@
       "attrs": [],
       "properties": {
         "id": 45,
-        "order": 55,
+        "order": 79,
         "prevSize": 20,
         "name": "chevron-up"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 44
     },
@@ -89,11 +89,11 @@
       "attrs": [],
       "properties": {
         "id": 126,
-        "order": 56,
+        "order": 82,
         "prevSize": 20,
         "name": "check"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 125
     },
@@ -113,11 +113,11 @@
       "attrs": [],
       "properties": {
         "id": 156,
-        "order": 53,
+        "order": 84,
         "prevSize": 20,
         "name": "emoji-happy"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 155
     },
@@ -137,11 +137,11 @@
       "attrs": [],
       "properties": {
         "id": 175,
-        "order": 48,
+        "order": 86,
         "prevSize": 20,
         "name": "gauge"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 174
     },
@@ -161,11 +161,11 @@
       "attrs": [],
       "properties": {
         "id": 191,
-        "order": 52,
+        "order": 88,
         "prevSize": 20,
         "name": "infinity"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 190
     },
@@ -185,11 +185,11 @@
       "attrs": [],
       "properties": {
         "id": 200,
-        "order": 46,
+        "order": 77,
         "prevSize": 20,
         "name": "leaf"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 199
     },
@@ -209,11 +209,11 @@
       "attrs": [],
       "properties": {
         "id": 219,
-        "order": 45,
+        "order": 80,
         "prevSize": 20,
         "name": "mail"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 218
     },
@@ -233,11 +233,11 @@
       "attrs": [],
       "properties": {
         "id": 245,
-        "order": 44,
+        "order": 81,
         "prevSize": 20,
         "name": "phone"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 244
     },
@@ -257,11 +257,11 @@
       "attrs": [],
       "properties": {
         "id": 312,
-        "order": 51,
+        "order": 83,
         "prevSize": 20,
         "name": "users"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 311
     },
@@ -281,11 +281,11 @@
       "attrs": [],
       "properties": {
         "id": 359,
-        "order": 42,
+        "order": 85,
         "prevSize": 20,
         "name": "facebook-with-circle"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 358
     },
@@ -305,13 +305,37 @@
       "attrs": [],
       "properties": {
         "id": 367,
-        "order": 41,
+        "order": 87,
         "prevSize": 20,
         "name": "instagram-with-circle"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 366
+    },
+    {
+      "icon": {
+        "paths": [
+          "M512 20.48c-271.462 0-491.52 220.058-491.52 491.52s220.058 491.52 491.52 491.52 491.52-220.058 491.52-491.52-220.058-491.52-491.52-491.52zM391.68 715.725h-99.533v-320.307h99.533v320.307zM341.299 356.096c-31.437 0-51.763-22.272-51.763-49.818 0-28.109 20.941-49.715 53.043-49.715s51.763 21.606 52.378 49.715c0 27.546-20.275 49.818-53.658 49.818zM755.2 715.725h-99.533v-177.51c0-41.318-14.438-69.376-50.432-69.376-27.494 0-43.827 18.995-51.046 37.274-2.662 6.502-3.328 15.718-3.328 24.883v184.678h-99.584v-218.112c0-39.987-1.28-73.421-2.611-102.195h86.477l4.557 44.493h1.997c13.107-20.89 45.21-51.712 98.918-51.712 65.485 0 114.586 43.878 114.586 138.189v189.389z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "linkedin-with-circle"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 371,
+        "order": 75,
+        "prevSize": 20,
+        "name": "linkedin-with-circle"
+      },
+      "setIdx": 3,
+      "setId": 2,
+      "iconIdx": 370
     },
     {
       "icon": {
@@ -329,11 +353,11 @@
       "attrs": [],
       "properties": {
         "id": 380,
-        "order": 43,
+        "order": 89,
         "prevSize": 20,
         "name": "twitter-with-circle"
       },
-      "setIdx": 1,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 379
     }
