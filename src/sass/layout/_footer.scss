@@ -51,20 +51,20 @@
     }
 
     &__img {
-      width: 20rem;
+      width: 25em;
 
       @include respond(tab-port) {
-        width: 18rem;
+        width: 20rem;
       }
       @include respond(phone-med) {
-        width: 15rem;
+        width: 17rem;
       }
       @include respond(phone) {
-        width: 13rem;
+        width: 15rem;
         margin-bottom: 0;
       }
       @include respond(phone-small) {
-        width: 10rem;
+        width: 12rem;
       }
     }
   }

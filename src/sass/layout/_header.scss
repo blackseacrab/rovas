@@ -16,11 +16,11 @@
 
   &__logo-box {
     margin-left: 2rem;
-    height: 8rem;
+    height: 10rem;
     animation: none;
 
     @include respond(phone-big) {
-      height: 6rem;
+      height: 8rem;
     }
 
     &:hover {
